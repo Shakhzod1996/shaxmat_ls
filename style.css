@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(208, 208, 208);
+}
+
+.container {
+  margin: auto;
+  display: flex;
+}
+
+.place-container{
+  /* display: grid;
+  grid-template-columns:repeat(8, 1fr); */
+  /* width: 640px;
+  height: 640px; */
+  margin: auto;
+  /* border: 5px solid #000; */
+}
+
+.rows:nth-child(odd) .card:nth-child(odd) {
+  background-color: #000;
+}
+.rows:nth-child(even) .card:nth-child(even) {
+  background-color: #000;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  cursor: pointer;
+}
+
+.elboard {
+  flex-direction: column;
+  display: flex;
+}
+
+.coordination {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  right: 0;
+  background-color: #fff;
+  width: 100px;
+  height: 85px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.tosh-fixed {
+  position: fixed;
+  left:0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  margin: 10px;
+}
+
+.tosh-fixed img {
+  width: 100px;
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .4s ease;
+  
+}
+
+.tosh-fixed img:hover {
+  box-shadow: 0px 0px 31px 13px rgb(156, 255, 255) inset !important;
+}
+
+.ston_selected {
+  box-shadow: 0px 0px 31px 13px rgb(156, 255, 255) inset !important;
+}
+
+
+
+
+
+
+

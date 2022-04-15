@@ -115,8 +115,8 @@ for (let card of places) {
           card.classList.contains(`y_${y}`) && card.classList.contains(`x_${i}`)
             ? card.classList.add("help")
             : '';
-          card.classList.contains(`y_${y - 1}`) &&
-          card.classList.contains(`x_${x - 1}`)
+          card.classList.contains(`y_${y - i}`) &&
+          card.classList.contains(`x_${x - i}`)
             ? card.classList.add("help")
             : '';
         }
@@ -124,16 +124,16 @@ for (let card of places) {
           card.classList.contains(`y_${i}`) && card.classList.contains(`x_${x}`)
             ? card.classList.add("help")
             : '';
-          card.classList.contains(`y_${y + 1}`) &&
-          card.classList.contains(`x_${x + 1}`)
+          card.classList.contains(`y_${y + i}`) &&
+          card.classList.contains(`x_${x + i}`)
             ? card.classList.add("help")
             : '';
-          card.classList.contains(`y_${y - 1}`) &&
-          card.classList.contains(`x_${x + 1}`)
+          card.classList.contains(`y_${y - i}`) &&
+          card.classList.contains(`x_${x + i}`)
             ? card.classList.add("help")
             : '';
-          card.classList.contains(`y_${y + 1}`) &&
-          card.classList.contains(`x_${x - 1}`)
+          card.classList.contains(`y_${y + i}`) &&
+          card.classList.contains(`x_${x - i}`)
             ? card.classList.add("help")
             : '';
         }

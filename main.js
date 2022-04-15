@@ -243,3 +243,19 @@ for (let card of places) {
     }
   });
 }
+
+// ?3D
+let d3 = document.querySelector('.d3')
+let threeD = document.querySelector('.threeD')
+let thwoD = document.querySelector('.thwoD')
+let container = document.querySelector('.container')
+
+
+
+d3.addEventListener('click', () => {
+  threeD.classList.toggle('threeD-hide')
+  thwoD.classList.toggle('thwoD-show')
+  container.classList.toggle('container-3d')
+  placeContainer.classList.toggle('place-container-3d')
+})
+

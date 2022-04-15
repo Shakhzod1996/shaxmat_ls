@@ -17,12 +17,21 @@ body {
   display: flex;
 }
 
+.container-3d {
+  transform: perspective(500px);
+}
+
 .place-container{
   margin: auto;
   border: 5px solid #000;
   width: 650px;
   flex-wrap: wrap;
   display: flex;
+  transition: all .4s ease;
+}
+
+.place-container-3d {
+  transform: perspective(500px) rotateX(21deg) rotateY(0deg) rotateZ(0deg) scale(.8) translateX(0px) translateY(-50px) translateZ(50px);
 }
 
 .dark_color {
@@ -96,6 +105,32 @@ body {
 
 .help {
   box-shadow: 0px 0px 31px 13px rgb(62, 252, 252) inset !important;
+}
+
+.thwoD {
+  display: none;
+}
+
+.thwoD-show {
+  display: block;
+}
+
+.threeD-hide {
+  display: none;
+}
+
+.d3 {
+  position: fixed;
+  width: 100px;
+  height: 40px;
+  top: 20px;
+  right: 0;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
 }
 
 
